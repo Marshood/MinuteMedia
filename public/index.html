@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW MinuteMedia</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body style="text-align: center;">
+    <br>
+    <br>
+    <h1>MinuteMedia</h1>
+
+    <div>
+        <label for="Team">Team</label>
+        <select name="teams" id="teams" onChange="filtermatches()">
+        <option value="All">All</option>
+          </select>
+        <!--  -->
+        <label for="Tournament">Tournament</label>
+        <select name="tournament" id="tournament" onChange="filtermatches()">
+            <option value="All">All</option>
+          </select>
+
+        <!--  -->
+        <label for="Status">Status</label>
+
+        <select name="Status" id="Status" onChange="filtermatches()">  
+            <option value="All">All</option>
+            <option value="upcoming">upcoming</option>
+            <option value="played">played</option>
+          </select>
+        <br><br>
+        <div>
+            <div id="loader" class="loader"> loadig</div>
+            <table id='mainTable' class="">
+                <thead>
+                    <tr>
+                        <th>home_team</th>
+                        <th>away_team</th>
+                        <th>home_score</th>
+                        <th>away_score</th>
+                        <th>tournament</th>
+                        <th>start_time</th>
+                        <th>kickoff</th>
+                        <th>status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>
